@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="css/index.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/nav.css">
+
+
+
+
+    <script type="text/javascript" src="css/jquery-3.4.0.min.js"> </script>
+    <script async src="/scripts/sendCityRequest.js"></script>
+</head>
+<body>
+  <div class="container1">
+  <header>
+
+    <nav id="nav">
+        <ul id="nav-buttons">
+            <img src="ufc.png" high="*", width="300px">
+            <li class="nav-buttons-list"><a href="second.html">Біографія бійців</a></li>
+            <li class="nav-buttons-list"><a href="#about">Контакти</a></li>
+            <!--<li class="nav-buttons-list"><a href="#sidebar">sidebar</a></li>-->
+            <li class="nav-buttons-list"><a href="#portfolio">Статистика</a></li>
+            <!--<li class="nav-buttons-list"><a href="#contact">Contact</a></li>-->
+            <li id="nav-buttons-list-bootstrap" class="nav-buttons-list" ><a href="#header">Home</a></li>
+        </ul>
+        <h1 id="buildNow">Джордж Сен-П'єр </h1>
+        <h1 id="websiteNow">завершив кар'єру</h1>
+        <p id="representation">Наша сторінка інформує вас про всі нові поідї у світі MMA</p>
+    </nav>
+    <aside id="aside1" class="">
+         <h6 id="request">Request of Quote</h6>
+         <div id="form-msg"></div>
+      <form method="post">
+          <input class="input" id="visitor-name" type="text" placeholder="Fullname"><br>
+        <input class="input" id="visitor-email" type="email" placeholder="Email"><br>
+        <input class="input" id="visitor-second-name" type="text" placeholder="Phone number"><br>
+        <input class="input" id="visitor-info" type="text" placeholder="Country"><br>
+        <label><input type="checkbox" >I accept the terms & conditions</label><br>
+            <input id="submit-contact-form" class="input" type="submit" value="Send">
+      </form></aside>
+
+   </header>
+   <div id="registration">
+     <br>
+<button id="jbutton">Показати стару форму</button>
+     <p id="oldform">
+   <form name="contact_form" id="signup"  method=post hidden>
+
+                <label for="signupemail"><font size= 3 >Email</font></label>
+                <input type="email" class="form-control" id="signupemail" name="signupemail" placeholder="Enter Email"  >
+
+
+                <label for="name"><font size= 3 >Name</font></label>
+                <input type="text" class="form-control" id="signupname" name="signinname" placeholder="Enter name" >
+
+
+                <label for="accountid"><font size= 3 >Account</font></label>
+                <input type="hidden" class="form-control" id="accountid" value="11223876">
+
+
+
+
+
+                <button type="submit" class="btn btn-primary" onclick="validate_form()">Register</button>
+
+                <br>
+                <br>
+                </form>
+                </p>
+                </div>
+   <main>
+ <div id="test" class="main" hidden>Блок що змінює стилі при перемиканні
+     <button onClick="addProps1()">Стиль номер 1</button>
+     <button onClick="addProps2()">Стиль номер 2</button>
+     <button onClick=removeProps() >Забрати стилі</button>
+ </div>
+
+ <div id="canvas2"><canvas height="150" id="canvas1" style="border:1px solid #ccc;" width="150" > </canvas>
+   <span></span>
+ </div>
+ <div id="stats">
+   <h1><font size= 6 >Статистика</font></h1>
+
+   <table border =2 align=left width="50%" cellspacing="0" id="list">
+       <tr>
+       <th>Суперник </th>
+       <th>Рахунок </th>
+       <th>Місто </th>
+       <th>Дата</th>
+       </tr>-
+       <tr>
+       <td>Біспінг </td>
+       <td>22-2 </td>
+       <td>Вашингтон </td>
+       <td>23.10.2018 </td>
+       </tr>
+       <tr>
+       <td>Джонс </td>
+       <td>21-2 </td>
+       <td>Даллас </td>
+       <td>20.02.2016 </td>
+       </tr>
+       <tr>
+       <td>Хендрікс </td>
+       <td>20-2 </td>
+       <td>Огайо </td>
+       <td>12.08.2012 </td>
+       </tr>
+       </table><br><br><br><br><br><br><br><br><br><br>
+
+
+
+       <!--<div id="divID">
+
+       </div>-->
+
+     <button onclick="MyAdd()">+ нова комірка</button>
+     <button onclick="this.parentNode.removeChild(this);">Знищити цю кнопку</button>
+     <button onclick="MyAdd1()">Повідомлення</button>
+     <button onclick="this.parentNode.removeChild(divID);">Видалити батьківський</button>
+
+ </div>
+ <div id="description">
+   <span id="span1">Майкл Біспінг</span>
+   <span id="span2">Джон Джонс</span>
+ </div>
+ <div id="images">
+   <img src="image/bisping.png" high="*", width="300px">
+   <img src="image/jhons.png" high="*", width="300px">
+ </div>
+
+ <div id="portfolio" class="portfolio" style="width: 500px; height: 400px;"></div>
+ <span class="portfolio">Гістограма відображає кількість перемог учасників
+ </span>
+
+
+ </main>
+ <div id="sidebar">
+
+   <form name="form2" action="page.html" method="get">
+    <p><b><font size= 2 >Чи була ця інформація корисною для вас?</font></b></p>
+     <p><input name="answer" type="radio" value="yes"><font size= 2 color="white"> Так</font></p>
+     <p><input name="answer" type="radio" value="not at all"><font size= 2 color="white"> Ні</font></p>
+     <p><input name="answer" type="radio" value="no" checked><font size= 2 color="white"> Не зовсім</font></p>
+     <p><input type="submit" value="Відправити"></p>
+   <p><b><font size= 5 >Залиште ваш коментар:</font> </b></p>
+   <p><textarea name="comment"></textarea></p>
+   <p><input type="button" id="button" value="Відправити" onclick="message()"></p>
+     <div class="form-group">
+   <p><font size=4 >Оцініть наш сайт за 5-ти бальною шкалою</font></p>
+                 <label  class="exampleFormControlSelect1" for="exampleFormControlSelect1">Виберіть оцінку</label>
+                 <select name="selected" class="form-control" id="exampleFormControlSelect1" >
+                 <option value="first">1</option>
+                 <option value="second">2</option>
+                 <option value="third">3</option>
+                 <option value="fourth">4</option>
+                 <option value="fifth">5</option>
+                 </select>
+                 </div>
+         <p><input type="button"  value="Відправити" onclick="thanks() "></p>
+
+   </form>
+
+
+
+
+
+
+
+ </div>
+
+   <!--////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+
+
+    <footer>
+         <form id="about">
+           <h1 id="h1">Заповніть форму звернення!</h1>
+                 <table>
+                   <tr>
+                     <td>Від кого це звернення</td>
+                     <td>
+                       <input name="from" type="text">
+                     </td>
+                   </tr>
+                   <tr>
+                     <td>Ваш пароль</td>
+                     <td>
+                       <input name="password" type="password">
+                     </td>
+                   </tr>
+                   <tr>
+                     <td>Повторіть пароль</td>
+                     <td>
+                       <input name="password2" type="password">
+                     </td>
+                   </tr>
+                   <tr>
+                     <td>Куди</td>
+                     <td>
+                       <select name="to">
+                         <option></option>
+                         <option value="1">Організація поєдинків</option>
+                         <option value="2">Спонсорський штаб</option>
+                         <option value="3">Менеджер</option>
+                       </select>
+                     </td>
+                   </tr>
+                 </table>
+
+                 Звернення:
+                 <label>
+                   <textarea name="message" style="display:block;width:400px;height:80px"></textarea>
+                 </label>
+
+                 <input type="button" onclick="validate(this.form)" value="Проверить">
+               </form>-->
+
+             </footer>
+
+
+        <script src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript" src="script.js"> </script>
+    <script type="text/javascript" src="submit.js"> </script>
+    <!--<script type="text/javascript">
+      if(window.jQuery) alert("est");
+      else alert("ne est");
+    </script>-->
+
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/styles/bootstrap.min.css">
+    <link rel="stylesheet" href="/styles/main.css">
+    <script async src="/scripts/sendCityRequest.js"></script>
+
+</head>
+
+<body>
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h4 class="display-4">Виберіть свого бійця</h4>
+            <p>Введіть ім'я:</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <form action="/getResponse.php">
+            <div class="row">
+                <div class="form-group col-sm-3">
+                    <label for="firstCity">Перший:</label>
+                    <input class="form-control" type="text" id="firstCity" onchange="sendCityRequest(this.value, 0)">
+                </div>
+                <div class="form-group col-sm-3">
+                    <label for="secondCity">Другий:</label>
+                    <input class="form-control" type="text" id="secondCity" onchange="sendCityRequest(this.value, 1)">
+                </div>
+                <!--/div-->
+                <!--div class="row"-->
+                <div class="form-group col-sm-3">
+                    <label for="thirdCity">Третій:</label>
+                    <input class="form-control" type="text" id="thirdCity" onchange="sendCityRequest(this.value, 2)">
+                </div>
+                <div class="form-group col-sm-3">
+                    <label for="fourthCity">Четвертий:</label>
+                    <input class="form-control" type="text" id="fourthCity" onchange="sendCityRequest(this.value, 3)">
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <div class='container text-monospace font-weight-light'>
+        <div class='row' id="descriptionRows">
+            <div class='col-sm-3'></div>
+            <div class='col-sm-3'></div>
+            <div class='col-sm-3'></div>
+            <div class='col-sm-3'></div>
+        </div>
+    </div>
+
+    <br>
+
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

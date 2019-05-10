@@ -1,0 +1,316 @@
+body {
+
+  /*background: url(background.jpg) no-repeat center;*/
+   background-size: 100% 100% ;
+   max-width: 1350px;
+   margin: 0 auto;
+   font-family: Helvetica;
+   font-size: 0.875em;
+   line-height: 1.6em;
+   color:black;
+
+
+   }
+   p{
+     margin-left:200px;
+   }
+   h1{
+       margin:20px;
+       padding-top:20px;
+
+   }
+   h2{
+       margin:20px;
+
+   }
+   h3{
+       font-size:22px;
+       font-weight: bold;
+   }
+   h4{
+       color:#c62314;
+       font-size: 26px;
+       margin:10px;
+   }
+   h5{
+       text-align:center;
+
+   }
+   h6{
+
+       font-size:28px;
+       margin-bottom:20px;
+   }
+   #buildNow{
+
+      font-weight: bold;
+      color:black;
+      font-size:48px;
+      margin-top:150px;
+      margin-left:240px;
+
+
+   }
+   #websiteNow{
+       color:white;
+       font-weight:bold;
+       font-size:48px;
+       margin-top:-15px;
+      margin-left:225px;
+   }
+   #representation{
+       font-weight: bold;
+      color:white;
+      font-size:24px;
+      margin-top:0px;
+      margin-left:120px;
+   }
+   #about{
+     margin-left: 200px;
+   }
+   .about{
+
+       text-align:center;
+       grid-area:about;
+       float:left;
+       background:#130d29;
+       color:white;
+
+   }
+
+
+
+
+
+
+
+
+   #signup{
+     margin-right:40px;
+
+   }
+   .exampleFormControlSelect1{
+     margin-left: 200px;
+   }
+   .form-control{
+     margin-left: 200px;
+   }
+    .container{
+       display: flex;
+       align-items: stretch;
+    }
+
+   .container1{
+
+       display:grid;
+       grid-template-areas: "header "
+                             "registration"
+                               "main "
+                               "sidebar "
+                               "footer ";
+       grid-template-columns:1350px;
+
+       grid-template-rows:600px 600px 650px 850px 500px;
+       min-height:200vh;
+   }
+   #images{
+     margin-left: 700px;
+     margin-top:300px;
+     position: absolute;
+   }
+   #description{
+     margin-left: 720px;
+     margin-top:250px;
+     position: absolute;
+     font-size: 24px;
+     shadow:13px;
+
+   }
+   #span1{
+     margin-left: 50px;
+     color:white;
+     background:#c62314;
+     border: 3px double white;
+     border-radius: 10px;
+     border-color:#F3E8B8;
+   }
+   #span2{
+     margin-left: 155px;
+     color:white;
+     background:#c62314;
+     border: 3px double white;
+     border-radius: 10px;
+     border-color:#F3E8B8;
+   }
+#h1{
+  font-family: Verdana;
+  color: silver;
+  text-shadow: black 2px;
+}
+#submit-contact-form{
+    background:#c62314;
+    color:white;
+}
+  .css-class{
+      color:red;
+      background-color:black;
+      border:"1px solid blue";
+      padding:"3px";
+  }
+  .css-class-new{
+    color:black;
+    background-color:yellow;
+      width: 300px;
+      margin: auto;
+  }
+  td select,
+td input {
+width: 150px;
+}
+
+label {
+display: block;
+}
+
+.error input,
+.error textarea {
+border: 1px solid red;
+}
+
+.error {
+color: red;
+}
+.alert {
+  padding: 15px;
+  border: 1px solid #d6e9c6;
+  border-radius: 4px;
+  color: white;
+  background-color: black;
+}
+/*.main{
+    text-align:center;
+    grid-area:about;
+    float:left;
+    background:#130d29;
+    color:white;
+
+}*/
+#list {
+  color:white;
+  background:#c62314;
+  border: 3px double white;
+  border-radius: 10px;
+  border-color:#F3E8B8;
+  padding: 15px;
+opacity: 0.7;
+
+}
+header{
+    width: 1350px;
+  height: 600px;
+  display: block;
+  position: relative;
+  z-index: 1;
+
+}
+#registration{
+  background:#F9F9FA;
+}
+header::after{
+    content:"";
+    background-image : url('../image/background.jpg');
+     /*background-image: url(image/background.jpg);*/
+  /*opacity: 0.5;*/
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
+aside {
+  text-align:center;
+  display: block;
+  margin-left: 850px;
+  box-shadow: 0px 0px 3px 3px #eeeeee inset;
+  background: white;
+  height:550px;
+  margin-top:-135px;
+}
+#aside1 {  /* селектор блока, который будет оставаться на месте */
+  /*position: fixed;*/
+  z-index: 15;
+  padding:25px 15px;
+  width:400px;
+}
+.input{
+    border: 1px solid #cccccc;
+   border-radius: 3px;
+   background: #ffffff;
+   outline: none;
+   padding:5px;
+   margin:5px;
+   height: 50px;
+   width: 300px;
+   color: #cccccc;
+   font-size: 16px;
+   font-family: Helvetica,Tahoma;
+   background:#eeeeee;
+
+}
+canvas{
+    z-index: 2;
+    background-color: white;
+}
+#canvas2{
+  margin-left:85px;
+}
+.portfolio{
+  margin-left: 85px;
+
+}
+main{
+    width: 1350px;
+    color: white;
+  height: 650px;
+  margin-left: auto;
+   margin-right: auto;
+
+  background:#3A3A3A;
+  display: block;
+  position: relative;
+  z-index: 1;
+
+}
+#sidebar{
+    width: 1350px;
+  height: 650px;
+  background:#F9F9FA;
+  display: block;
+  position: relative;
+  z-index: 1;
+
+}
+#stats{
+  margin-left: 700px;
+  margin-top: -150px;
+  position: absolute;
+}
+footer{
+    width: 1350px;
+  height: 500px;
+  display: block;
+  position: relative;
+  z-index: 1;
+  background:#3A3A3A;
+
+}
+
+.footer{
+    font-size:16px;
+    padding:55px 130px;
+    color:white;
+
+    grid-area:footer;
+    background:#130d29;
+}
